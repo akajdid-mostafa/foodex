@@ -4,8 +4,6 @@ import { CardFood } from '../Components/Card/Card';
 
 const Search = () => {
 
-  const [search, setsearch] = useState("28012 Madrid, Spain")
-
   const [filters, setFilters] = useState([
     {
       title: "Popular Style",
@@ -297,21 +295,21 @@ const Search = () => {
                 <nav aria-label="Page navigation example">
                   <ul className="pagination pagiantionMod gap-2">
                     <li className="page-item">
-                      <a className="page-link " href="#" aria-label="Previous">
+                      <button type="button" className="page-link " aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                         <span className="sr-only">Previous</span>
-                      </a>
+                      </button>
                     </li>
-                    <li className="page-item active"><a className="page-link " href="#">1</a></li>
-                    <li className="page-item"><a className="page-link " href="#">2</a></li>
-                    <li className="page-item"><a className="page-link " href="#">3</a></li>
-                    <li className="page-item"><a className="page-link " href="#">...</a></li>
-                    <li className="page-item"><a className="page-link " href="#">10</a></li>
+                    <li className="page-item active"><button type="button" className="page-link ">1</button></li>
+                    <li className="page-item"><button type="button" className="page-link ">2</button></li>
+                    <li className="page-item"><button type="button" className="page-link ">3</button></li>
+                    <li className="page-item"><button type="button" className="page-link ">...</button></li>
+                    <li className="page-item"><button type="button" className="page-link ">10</button></li>
                     <li className="page-item">
-                      <a className="page-link " href="#" aria-label="Next">
+                      <button type="button" className="page-link " aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                         <span className="sr-only">Next</span>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </nav>
